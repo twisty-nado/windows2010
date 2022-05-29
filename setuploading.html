@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Windows 2010</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/7.css" />
+    <script src="closewindow.js"></script>
+  </head>
+
+  <body>
+    <style>
+        body{
+            background-image: url(loginsetup.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center; 
+        }
+        
+        .font{
+            font-size: 24px;
+            text-align: center;
+            position: absolute;
+            bottom: 50;
+            left: 50%;
+            color: white;
+            transform: translateX(-50%); 
+            left: 50%;
+        }
+    </style>
+    <br>
+    <br>
+    <br>
+    <h1 class="font">Please wait</h1>
+    <br>
+    <div role="progressbar" class="marquee" style="width: 30%; margin: auto; position: absolute; bottom: 20; transform: translateX(-50%); left: 50%;"></div>
+    <script>
+      var secondsPassed = 0;
+      function wait(){
+        if (secondsPassed = 25){
+          location.href = "desktop.html";
+        }
+        else{
+          secondsPassed + 1;
+        }
+      }
+      setInterval("wait()", 1000);
+      </script>
+  </body>
+</html>
